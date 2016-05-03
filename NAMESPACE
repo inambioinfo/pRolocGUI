@@ -1,0 +1,21 @@
+## Depends
+import(pRoloc)
+import(MSnbase)
+import(methods)
+
+## Imports
+importFrom("graphics", "axis", "boxplot", "legend", "matlines", "par",
+           "points", "title")
+importFrom("utils", "packageVersion", "install.packages")
+
+import(shiny)
+import(scales)
+importFrom(DT,
+           ## see issue 61
+           ## dataTableOutput,
+           ## renderDataTable,
+           formatStyle)
+importFrom(dplyr, "%>%")
+
+
+export(pRolocVis)
